@@ -1,13 +1,10 @@
 body{
     font-family: 'Montserrat', sans-serif;
     margin: 0 auto;
-    /* background: linear-gradient(#af50c9, white); */
-    background-color: #af50c9;
     color: #333333;
 }
 
 body.modo-escuro{
-    background-color: #582965;
     color: #f5f5f5;
 }
 header{
@@ -22,7 +19,7 @@ header .imagem-botao{
     transition: 0.2s ease-in-out;
 }
 .logo-pokemon{
-    width: 12vw;
+    width: 15vw;
 }
 header #botao-alterar-tema{
     background: none;
@@ -50,10 +47,12 @@ nav{
     display: flex;
     justify-content: space-around;
     padding: 10px;
+    border-top: 2px solid #333333;
     border-bottom: 2px solid #333333;
     align-items: center;
 }
 .modo-escuro nav{
+    border-top: 2px solid white;
     border-bottom: 2px solid white;
 }
 nav a{
@@ -81,9 +80,13 @@ nav a:hover{
 main{
     padding: 25px;
     background: linear-gradient(#af50c9, white);
+    border-top: 200px solid #af50c9;
+    border-bottom: 100px solid white;
 }
 .modo-escuro main{
     background: linear-gradient(#582965, black);
+    border-top: 200px solid #582965;
+    border-bottom: 100px solid black;
 }
 .listagem-pokemon{
     display: flex;
