@@ -83,14 +83,9 @@ main{
     padding: 25px;
     background: linear-gradient(#af50c9, white);
     padding-top: 35vh;
-    /* border-top: 200px solid #af50c9; */
-    /* border-bottom: 100px solid white; */
 }
 .modo-escuro main{
     background: linear-gradient(#582965, black);
-    padding-top: 35vh;
-    /* border-top: 200px solid #582965; */
-    /* border-bottom: 100px solid black; */
 }
 .listagem-pokemon{
     display: flex;
