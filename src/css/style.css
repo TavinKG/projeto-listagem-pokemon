@@ -19,7 +19,7 @@ header .imagem-botao{
     transition: 0.2s ease-in-out;
 }
 .logo-pokemon{
-    width: 15vw;
+    width: 30%;
 }
 header #botao-alterar-tema{
     background: none;
@@ -35,7 +35,8 @@ header .container{
     background-color: #af50c9;
     display: flex;
     justify-content: center;
-    padding: 30px;
+    padding: 12px;
+    height: 20vh;
 }
 .modo-escuro .container{
     background-color: #582965;
@@ -46,6 +47,7 @@ header .container{
 nav{
     display: flex;
     justify-content: space-around;
+    height: 10vh;
     padding: 10px;
     border-top: 2px solid #333333;
     border-bottom: 2px solid #333333;
@@ -80,13 +82,15 @@ nav a:hover{
 main{
     padding: 25px;
     background: linear-gradient(#af50c9, white);
-    border-top: 200px solid #af50c9;
-    border-bottom: 100px solid white;
+    padding-top: 35vh;
+    /* border-top: 200px solid #af50c9; */
+    /* border-bottom: 100px solid white; */
 }
 .modo-escuro main{
     background: linear-gradient(#582965, black);
-    border-top: 200px solid #582965;
-    border-bottom: 100px solid black;
+    padding-top: 35vh;
+    /* border-top: 200px solid #582965; */
+    /* border-bottom: 100px solid black; */
 }
 .listagem-pokemon{
     display: flex;
@@ -252,3 +256,39 @@ main .descricao{
     font-size: 14px;
     padding-right: 10px;
 }
+
+@media screen and (max-width: 767px){
+    header .container{
+        height: 12vh;
+        padding: 10px;
+    }
+    nav{
+        max-height: 6vh;
+    }
+    .logo-pokemon{
+        width: 50%;
+    }
+    nav a{
+        font-size: 15px;
+    }
+    nav .logo,
+    nav .imagem-botao{
+        width: 25px;
+    }
+    main{
+        padding-top: 22vh;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .logo-pokemon{
+        width: 50%;
+    }
+    nav a{
+        font-size: 25px;
+    }
+    nav .logo,
+    nav .imagem-botao{
+        width: 50px;
+    }
+}
+
